@@ -51,18 +51,6 @@
       "relation": "manyToMany",
       "target": "api::category.category",
       "inversedBy": "movies"
-    },
-    "author": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::movie.movie",
-      "inversedBy": "movies"
-    },
-    "movies": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::movie.movie",
-      "mappedBy": "author"
     }
   }
 }
