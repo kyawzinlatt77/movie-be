@@ -3,6 +3,7 @@
 module.exports =  ({ env }) => ({
   //
   graphql: {
+    enabled: true,
     config: {
       endpoint: "/graphql",
       shadowCRUD: true,
@@ -10,7 +11,7 @@ module.exports =  ({ env }) => ({
       depthLimit: 7,
       amountLimit: 100,
       apolloServer: {
-        tracing: false,
+        tracing: true,
       },
     },
   },
